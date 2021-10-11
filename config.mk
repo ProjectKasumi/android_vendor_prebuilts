@@ -14,12 +14,12 @@
 LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
-ifeq ($(SHIPPING_WITH_ADAWAY), true)
+ifeq ($(KASUMI_SHIP_ADAWAY), true)
 PRODUCT_PACKAGES += \
     AdAway
 endif
 
-ifeq ($(STELLAR_BUILDTYPE), auroraoss)
+ifeq ($(KASUMI_BUILD_TYPE), auroraoss)
 PRODUCT_PACKAGES += \
     AuroraStore \
     AuroraServices
